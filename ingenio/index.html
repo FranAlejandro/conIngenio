@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConIngenio - Consultoría y Desarrollo de Software</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ConIngenio</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#servicios">Nuestros Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contáctenos</a></li>
+      </ul>
+    </nav>
+    <button id="toggleMode">🌙</button>
+  </header>
+
+  <section id="home">
+    <h2>Bienvenidos a ConIngenio</h2>
+    <p>Soluciones digitales integrales a tu alcance.</p>
+    <p>En ConIngenio nos especializamos en ofrecer soluciones digitales integrales que impulsan el crecimiento y la transformación de tu negocio.<br>
+      Nuestro equipo de expertos en tecnología trabaja contigo para entender tus desafíos y convertirlos en oportunidades.<br>
+      
+      Descubre nuestros servicios destacados como la Consultoría Digital, Soluciones Multiexperiencia, Evolución de Ecosistemas y Soluciones Low-Code.<br>
+      
+      🔗 Conoce más sobre nuestros [Servicios] <br>
+      📬 ¿Tienes una consulta? [Contáctanos]<br>
+      👥 Conoce quiénes somos en [Nosotros]</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div id="servicios-content"></div>
+  </section>
+
+  <section id="nosotros">
+    <h2>Nosotros</h2>
+    <div id="nosotros-content"></div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctenos</h2>
+    <form id="form-contacto">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="servicio">Seleccione un servicio:</label>
+      <select id="servicio" name="servicio" required>
+        <option value="">-- Seleccione --</option>
+        <option value="consultoria">Consultoría Digital</option>
+        <option value="multiexperiencia">Soluciones Multiexperiencia</option>
+        <option value="ecosistemas">Evolución de Ecosistemas</option>
+        <option value="lowcode">Soluciones Low-Code</option>
+      </select>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <div>
+      <p><strong>Dirección:</strong> Av. Providencia 1234, Oficina 601, Santiago, Chile</p>
+      <p><strong>Teléfono:</strong> +56 2 1234 5678</p>
+      <p><strong>Email:</strong> info@coningenio.cl</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

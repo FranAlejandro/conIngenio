@@ -1,0 +1,52 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0077cc;
+  padding: 1rem;
+  color: white;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+section {
+  padding: 1.5rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+input, select, textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+button {
+  padding: 0.5rem;
+}
+.dark {
+  background-color: #121212;
+  color: white;
+}
+.dark header {
+  background-color: #1f1f1f;
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
